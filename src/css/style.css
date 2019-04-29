@@ -335,6 +335,56 @@ h5,
   width: 100%;
 }
 
+/* : Column for Mobile : */
+
+.offset-mbl-1 {
+  margin-left: 8.33333%;
+}
+
+.offset-mbl-2 {
+  margin-left: 16.66667%;
+}
+
+.offset-mbl-3 {
+  margin-left: 25%;
+}
+
+.offset-mbl-4 {
+  margin-left: 33.33333%;
+}
+
+.offset-mbl-5 {
+  margin-left: 41.66667%;
+}
+
+.offset-mbl-6 {
+  margin-left: 50%;
+}
+
+.offset-mbl-7 {
+  margin-left: 58.33333%;
+}
+
+.offset-mbl-8 {
+  margin-left: 66.66667%;
+}
+
+.offset-mbl-9 {
+  margin-left: 75%;
+}
+
+.offset-mbl-10 {
+  margin-left: 83.33333%;
+}
+
+.offset-mbl-11 {
+  margin-left: 91.66667%;
+}
+
+.offset-mbl-12 {
+  margin-left: 100%;
+}
+
 /* : Display flex : */
 
 .d-flex {
@@ -362,6 +412,11 @@ h5,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.jcsa {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .aic {
@@ -427,6 +482,10 @@ h5,
   text-align: center;
 }
 
+.block--texright {
+  text-align: right;
+}
+
 .block__content {
   margin-top: 46px;
 }
@@ -448,6 +507,10 @@ h5,
 
 .block-contact__button {
   margin-top: 38px;
+}
+
+.block-map__firm {
+  position: relative;
 }
 
 .container {
@@ -885,6 +948,7 @@ h5,
 
 .image {
   width: 100%;
+  vertical-align: middle;
 }
 
 .image-cookie {
@@ -901,6 +965,19 @@ h5,
 
 .image-arrow {
   width: 50%;
+}
+
+.image-map {
+  position: absolute;
+  top: 0;
+  left: -51px;
+  width: 33px;
+  height: 33px;
+}
+
+.image-contact {
+  width: 16px;
+  margin-left: 16px;
 }
 
 .quote {
@@ -1141,56 +1218,6 @@ h5,
 
   .col-lpt-12 {
     width: 100%;
-  }
-
-  /* : Column for Laptop : */
-
-  .offset-lpt-1 {
-    margin-left: 8.33333%;
-  }
-
-  .offset-lpt-2 {
-    margin-left: 16.66667%;
-  }
-
-  .offset-lpt-3 {
-    margin-left: 25%;
-  }
-
-  .offset-lpt-4 {
-    margin-left: 33.33333%;
-  }
-
-  .offset-lpt-5 {
-    margin-left: 41.66667%;
-  }
-
-  .offset-lpt-6 {
-    margin-left: 50%;
-  }
-
-  .offset-lpt-7 {
-    margin-left: 58.33333%;
-  }
-
-  .offset-lpt-8 {
-    margin-left: 66.66667%;
-  }
-
-  .offset-lpt-9 {
-    margin-left: 75%;
-  }
-
-  .offset-lpt-10 {
-    margin-left: 83.33333%;
-  }
-
-  .offset-lpt-11 {
-    margin-left: 91.66667%;
-  }
-
-  .offset-lpt-12 {
-    margin-left: 100%;
   }
 }
 
