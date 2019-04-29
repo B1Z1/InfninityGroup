@@ -12,7 +12,7 @@
 @each $name in $columns {
     @if $name == 'mbl'{
         /* : Column for Mobile : */
-        @for $i from 1 through 12{
+        @for $i from 1 through 13{
             .col-#{$name}-#{$i}{
                 @include column_generator($i);
             }
@@ -21,7 +21,7 @@
     @else if $name == 'tbl'{
         @media only screen and ( min-width: 768px ){
             /* : Column for Tablet : */
-            @for $i from 1 through 12{
+            @for $i from 1 through 13{
                 .col-#{$name}-#{$i}{
                     @include column_generator($i);
                 }
@@ -31,7 +31,7 @@
     @else if $name == 'lpt'{
         @media only screen and ( min-width: 1366px ){
             /* : Column for Laptop : */
-            @for $i from 1 through 12{
+            @for $i from 1 through 13{
                 .col-#{$name}-#{$i}{
                     @include column_generator($i);
                 }
@@ -41,7 +41,7 @@
     @else {
         @media only screen and ( min-width: 1600px ){
             /* : Column for Desktop : */
-            @for $i from 1 through 12{
+            @for $i from 1 through 13{
                 .col-#{$i}{
                     @include column_generator($i);
                 }

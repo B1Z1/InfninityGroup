@@ -335,6 +335,10 @@ h5,
   width: 100%;
 }
 
+.col-mbl-13 {
+  width: 108.33333%;
+}
+
 /* : Column for Mobile : */
 
 .offset-mbl-1 {
@@ -1167,6 +1171,10 @@ h5,
   .col-tbl-12 {
     width: 100%;
   }
+
+  .col-tbl-13 {
+    width: 108.33333%;
+  }
 }
 
 @media only screen and (min-width: 1366px) {
@@ -1219,6 +1227,10 @@ h5,
   .col-lpt-12 {
     width: 100%;
   }
+
+  .col-lpt-13 {
+    width: 108.33333%;
+  }
 }
 
 @media only screen and (min-width: 1600px) {
@@ -1270,6 +1282,10 @@ h5,
 
   .col-12 {
     width: 100%;
+  }
+
+  .col-13 {
+    width: 108.33333%;
   }
 
   /* : Column for Desktop : */
