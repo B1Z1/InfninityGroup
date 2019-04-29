@@ -1,6 +1,6 @@
 export default class {
     constructor(object){
-        //Animation class
+        //Anime class from "canime.js"
         this.anime = object.anime;
         //All blocks from page
         this.elements = [... document.querySelectorAll(`.${object.elements}`)];

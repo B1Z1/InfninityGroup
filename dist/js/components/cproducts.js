@@ -13,10 +13,11 @@ export default class{
     init(){
         this.images.forEach((el, index)=>{
             let image = el,
+                //I don't know why, but chrome didn't allow frames, please turn on server
                 imageSVG = (image.contentDocument.getElementsByTagName('path')[0] || image.contentWindow.getElementsByTagName('path')[0]);
             //Add transition to SVG image
             imageSVG.style.transition = 'fill .3s ease-in-out';
-            if ( window.outerWidth < 768 ){
+            if ( window.innerWidth < 768 ){
                 imageSVG.style.fill = this.colors.hover;
                 this.removeHoverListeners(imageSVG, index);
             }
