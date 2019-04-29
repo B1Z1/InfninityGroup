@@ -10,7 +10,7 @@
     }
 }
 
-@media only screen and ( max-width: $size_tbl ){
+@media only screen and ( max-width: nth(nth($sizes, 2), 2) ){
     .quote{
         &::before{
             top: -50px;

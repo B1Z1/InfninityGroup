@@ -1,11 +1,12 @@
-$columns: ('mbl', 'tbl', 'lpt', '');
-$gap: 15px;
+$gutter: 15px;
 
-/* : Sizes : */
-$size_pc: 1600px;
-$size_lpt: 1366px;
-$size_tbl: 768px;
-$size_mbl: 415px;
+/* : Query sizes : */
+$sizes: (
+    mbl: 415px,
+    tbl: 768px,
+    lpt: 1366px,
+    pc: 1600px
+);
 
 /* : Colors : */
 $mainv1: white;
@@ -14,11 +15,17 @@ $title: #2d2d2d;
 $operative: #62c017;
 $footer: #242424;
 
-//Mixin width generator for 12 column
-@mixin column_generator($i){
-    width: $i / 12 * 100%;
-} 
+
 //Mixin margin generator for 12 column
 @mixin offset_generator($i){
     margin-left: $i / 12 * 100%;
 } 
+
+//Map list
+@mixin map-size($type, $el){
+    @each $name, $size in $sizes{
+        @if ( $name == $el ){
+            $type: $size;
+        }
+    }
+}

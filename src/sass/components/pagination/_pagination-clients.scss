@@ -13,7 +13,7 @@
     }
 }
 
-@media only screen and ( max-width: $size_lpt ){
+@media only screen and ( max-width: nth(nth($sizes, 3), 2) ){
     .pagination-clients{
         bottom: -20px!important;
     }

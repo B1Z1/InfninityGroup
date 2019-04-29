@@ -14,7 +14,7 @@
     }
 }
 
-@media only screen and ( max-width: $size_tbl ){
+@media only screen and ( max-width: nth(nth($sizes, 2), 2) ){
     .input-contact{
         &__text{
             max-width: 50%;

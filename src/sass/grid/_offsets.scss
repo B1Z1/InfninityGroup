@@ -1,38 +1,18 @@
-// @each $name in $columns {
-//     @if $name == 'mbl'{
-//         /* : Column for Mobile : */
-//         @for $i from 1 through 12{ 
+// @each $name, $size in $sizes {
+//     @if ( $name == 'mbl' ){
+//         @for $i from 1 to 13{
 //             .offset-#{$name}-#{$i}{
-//                 @include offset_generator($i);
+//                 flex: 0 0 $i / 12 * 100%;
+//                 width: $i / 12 * 100%;
 //             }
 //         }
 //     }
-//     @else if $name == 'tbl'{
-//         @media only screen and ( min-width: 768px ){
-//             /* : Column for Tablet : */
-//             @for $i from 1 through 12{
+//     @else{
+//         @media only screen and ( min-width: $size ){
+//             @for $i from 1 to 13{
 //                 .offset-#{$name}-#{$i}{
-//                     @include offset_generator($i);
-//                 }
-//             }
-//         }
-//     }
-//     @else if $name == 'lpt'{
-//         @media only screen and ( min-width: 1366px ){
-//             /* : Column for Laptop : */
-//             @for $i from 1 through 12{
-//                 .offset-#{$name}-#{$i}{
-//                     @include offset_generator($i);
-//                 }
-//             }
-//         }
-//     }
-//     @else {
-//         @media only screen and ( min-width: 1600px ){
-//             /* : Column for Desktop : */
-//             @for $i from 1 through 12{
-//                 .offset-#{$i}{
-//                     @include offset_generator($i);
+//                     flex: 0 0 $i / 12 * 100%;
+//                     width: $i / 12 * 100%;
 //                 }
 //             }
 //         }
@@ -50,7 +30,7 @@
 @media only screen and ( min-width: 1600px ){
     /* : Column for Desktop : */
     @for $i from 1 through 12{
-        .offset-#{$i}{
+        .offset-pc-#{$i}{
             @include offset_generator($i);
         }
     }

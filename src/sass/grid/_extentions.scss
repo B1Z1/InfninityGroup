@@ -10,8 +10,8 @@
 .row{
     display: flex;
     flex-wrap: wrap;
-    margin-right: -$gap;
-    margin-left: -$gap;
+    margin-right: -$gutter;
+    margin-left: -$gutter;
 }
 
 .jcc{
