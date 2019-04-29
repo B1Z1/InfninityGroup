@@ -17,7 +17,7 @@ export default class{
                 imageSVG = (image.contentDocument.getElementsByTagName('path')[0] || image.contentWindow.getElementsByTagName('path')[0]);
             //Add transition to SVG image
             imageSVG.style.transition = 'fill .3s ease-in-out';
-            if ( window.outerWidth < 768 ){
+            if ( window.innerWidth < 768 ){
                 imageSVG.style.fill = this.colors.hover;
                 this.removeHoverListeners(imageSVG, index);
             }
