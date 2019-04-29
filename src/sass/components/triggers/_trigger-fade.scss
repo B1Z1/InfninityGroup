@@ -1,0 +1,9 @@
+.trigger-fade{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    &--active{
+        opacity: 1;
+        visibility: visible;
+    }
+}

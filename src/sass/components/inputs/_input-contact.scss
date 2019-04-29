@@ -1,0 +1,23 @@
+.input-contact{
+    &__text{
+        max-width: 24%;
+        padding-left: 8px;
+        padding-right: 8px;
+        color: black;
+        border-bottom: 1px solid black;
+        line-height: 1em;
+        &::placeholder{
+            font-size: 1rem;
+            line-height: 1.5em;
+            color: black;
+        }
+    }
+}
+
+@media only screen and ( max-width: $size_tbl ){
+    .input-contact{
+        &__text{
+            max-width: 50%;
+        }
+    }
+}

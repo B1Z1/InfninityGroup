@@ -1,0 +1,23 @@
+.navigation-aside{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    width: 115px;
+    text-align: center;
+    transform: translateY(-50%);
+    z-index: 999;
+    &__sensor{
+        padding-bottom: 24px;
+        border-bottom: 1px solid $mainv2;
+    }
+    &__buttons{
+        position: relative;
+        margin-top: 64px;
+    }
+}
+
+@media only screen and ( max-width: $size_tbl ){
+    .navigation-aside{
+        display: none;
+    }
+}

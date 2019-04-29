@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+
+        <!-- : Main Style : -->
+        <link rel="stylesheet" href="css/style.min.css">
+
+        <!-- : Swiper Style : -->
+        <link rel="stylesheet" href="lib/Swiper/css/swiper.min.css">
+
+        <!-- : FontAwesome Style : -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+        <!-- : API MapBox Style : -->
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
+
+    </head>
+    <body>
+
+        <div class="cookies trigger-unfade">
+            <!-- : Cookies start : -->
+            <div class="container">
+                <div class="row jcc aic">
+                    <div class="col-tbl-1">
+                        <figure class="cookies__image">
+                            <img src="img/Cookie.svg" alt="Cookie Sygnet" class="image-cookie">
+                        </figure>
+                    </div>
+                    <div class="col-8 col-tbl-7">
+                        <div class="cookies__describe">
+                            <p class="reset-marpad">
+                                We use own and third party cookies to improve our services and show ads related to your 
+                                preferences by analyzing your browser habits . If you continue browsing , we consider 
+                                you accept its use. You can switch the configuration or learn more <a href="#" class="link link--operative link--underline">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-2 col-tbl-3">
+                        <div class="cookies__accept">
+                            <button class="button button-operative button-cookies button--uppercase">Close <i class="cookies__times fas fa-times"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- :  Cookies end  : -->
+        </div>
+
+        <!-- : Extra navigation start : -->
+        <div class="navigation-aside">
+            <div class="navigation-aside__sensor">
+                <h4 class="reset-marpad"><span class="navigation-aside__current"></span>/<span class="navigation-aside__all"></span></h4>
+            </div>
+            <div class="navigation-aside__buttons">
+                <a href="#" class="navigation-aside__prev link link-arrow trigger-unfade">
+                    <img src="img/ArrowUp.svg" class="image image-arrow" alt="ArrowUp">
+                </a>
+                <a href="#" class="navigation-aside__next link link-arrow trigger-unfade">
+                    <img src="img/ArrowDown.svg" class="image image-arrow" alt="ArrowDown">
+                </a>
+            </div>
+        </div>
+        <!-- : Extra navigation end : -->
+
+        <!-- : Mobile navigation start : -->
+        <div class="burger trigger-burger">
+            <div class="burger__line trigger-burger__line"></div>
+            <div class="burger__line trigger-burger__line"></div>
+            <div class="burger__line trigger-burger__line"></div>
+        </div>
+        <nav class="navigation-hmobile trigger-fade">
+            <div class="filter filter-linegrad filter-linegrad--operative"></div>
+            <ul class="list-hmobile trigger-fadeup d-flex aic jcc fdc">
+                <li class="list-hmobile__element"><a href="#mission" class="link link--white"><h3 class="reset-marpad">Mission</h3></a></li>
+                <li class="list-hmobile__element"><a href="#clients" class="link link--white"><h3 class="reset-marpad">Clients</h3></a></li>
+                <li class="list-hmobile__element"><a href="#products" class="link link--white"><h3 class="reset-marpad">Products</h3></a></li>
+                <li class="list-hmobile__element"><a href="#map" class="link link--white"><h3 class="reset-marpad">Contact</h3></a></li>
+            </ul>
+        </nav>
+        <!-- :  Mobile navigation end  : -->
+
+        <!-- : Block with header and hero start : -->
+        <section class="block block--backimage trigger-scroll" style="background-image: url(img/Background.jpg);">
+            <div class="filter filter-repeatgrad"></div>
+            <div class="filter filter-linegrad filter-linegrad--operative"></div>
+            <div class="container">
+                <!-- : Header normal start : -->
+                <header class="header d-flex">
+                    <div class="col-tbl-2 col-lpt-1">
+                        <a href="#" class="header__sygnet">
+                            <img src="img/Sygnet.png" alt="Infinity Sygnet" class="image">
+                        </a>
+                    </div>
+                    <div class="col-tbl-8 col-lpt-8 offset-lpt-1 ase">
+                        <nav class="header__navigation">
+                            <ul class="list-header d-flex jcc">
+                                <li class="list-header__element"><a href="#mission" class="link link--white">Mission</a></li>
+                                <li class="list-header__element"><a href="#clients" class="link link--white">Clients</a></li>
+                                <li class="list-header__element"><a href="#products" class="link link--white">Products</a></li>
+                                <li class="list-header__element"><a href="#map" class="link link--white">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
+                <!-- : Header normal end : -->
+                <div class="block__content block-hero reset-martop">
+                    <div class="col-4 ma">
+                        <h1 class="block-hero__title reset-marpad ft-homenaje">Witamy <span class="block-hero--darker">Infinity-Group</span></h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- : Block with header and hero end : -->
+
+        <!-- : Block mission start : -->
+        <section class="block block--larger trigger-scroll" id="mission">
+            <div class="container">
+                <h2 class="block__title block--texcen reset-marpad ft-homenaje">Mission</h2>
+                <div class="block__content block-mission">
+                    <div class="col-tbl-8 ma">
+                        <h4 class="quote reset-marpad">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
+                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non 
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum...
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- : Block mission end : -->
+
+        <!-- : Block clients start : -->
+        <section class="block block--larger block--backimage trigger-scroll" id="clients" style="background-image: url(img/trianglify.png);">
+            <div class="container">
+                <h2 class="block__title block--texcen block--cmain1 reset-marpad ft-homenaje">Clients</h2>
+                <div class="block__content block-clients">
+                    <!-- Slider main container -->
+                    <div class="block-clients__container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <div class="card-client">
+                                    <div class="row aic">
+                                        <div class="col-mbl-8 col-tbl-6 ma">
+                                            <figure class="card-client__image">
+                                                <img src="img/Ipad.png" alt="Card Client" class="image">
+                                            </figure>
+                                        </div>
+                                        <div class="col-mbl-11 col-tbl-6 ma">
+                                            <div class="card-client__describe">
+                                                <h3 class="quote reset-marpad">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                </h3>
+                                            </div>
+                                            <div class="card-client__contact">
+                                                <h4 class="reset-marpad">Project Manager / <a href="#" class="link link--underline link--white">Infinity-group.pl</a></h4>
+                                            </div>
+                                            <div class="card-client__tags">
+                                                <ul class="list-tags clearfix">
+                                                    <li class="list-tags__element fl"><span class="tag">web design</span></li>
+                                                    <li class="list-tags__element fl"><span class="tag">web design</span></li>
+                                                    <li class="list-tags__element fl"><span class="tag">web design</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="pagination-clients d-flex jcc"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- : Block clients end : -->
+
+        <!-- : Block products start : -->
+        <section class="block trigger-scroll" id="products">
+            <div class="container container--896">
+                <h2 class="block__title block--texcen ft-homenaje reset-marpad">Products</h2>
+                <h4 class="block__subtitle block--texcen">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h4>
+                <div class="block__content block-products">
+                    <div class="row">
+                        <div class="col-tbl-6 col-lpt-4 col-3">
+                            <div class="card-product">
+                                <figure class="card-product__image">
+                                    <object data="img/malware.svg" type="image/svg+xml" class="image image-product"></object>
+                                </figure>
+                                <div class="card-product__describe">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna 
+                                        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- : Block products start : -->
+        
+        <!-- : Block Map start :  -->
+        <section class="block block--larger trigger-scroll" id="map">
+            <div id="contact-map" class="filter filter-map"></div>
+            <div class="filter filter-color filter-color--white"></div>
+            <div class="container">
+                <div class="block__content block-map reset-martop">
+                    <div class="col-tbl-3 offset-2">
+                        <h4 class="block-map__firm ft-mada">Infinity Group Sp.z o.o.</h4>
+                        <ul class="list h4">
+                            <li class="list__element">ul.Skladowa 12,</li>
+                            <li class="list__element">15-399 Bialystok,</li>
+                            <li class="list__element">Polska.</li>
+                        </ul>
+                        <p class="block-map__describe h4">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- : Block Map end :  -->
+
+        <!-- : Block Contact start : -->
+        <section class="block trigger-scroll" id="contact">
+            <div class="container">
+                <h2 class="block__title ft-homenaje offset-1">Contact</h2>
+                <div class="block__content block-contact">
+                    <div class="col-9 ma">
+                        <p class="h4">
+                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, 
+                            <strong class="ft-mada--bold">totam rem aperiam</strong>, eaque ipsa quae ab illo <strong class="ft-mada--bold">inventore veritatis</strong> et quasi architecto beatae vitae.
+                        </p>
+                        <form action="#" class="form-contact" method="POST">
+                            <div class="h3">
+                                <label for="name">Hello! I'm</label>
+                                <input type="text" id="name" name="name" class="input input-contact__text validate-text" placeholder="Your Name">
+                                <label for="company">and I represent</label>
+                                <input type="text" id="company" name="company" class="input input-contact__text validate-text" placeholder="Company name">
+                                .
+                            </div>
+                            <div class="h3">
+                                <label for="phone">Call me at</label>
+                                <input type="tel" id="phone" name="phone" class="input input-contact__text validate-phone" placeholder="Your Telephone number">
+                                <label for="email">or send an email to</label>
+                                <input type="text" id="email" name="email" class="input input-contact__text validate-mail" placeholder="Your email adress">
+                                .
+                            </div>
+                            <label for="accept" class="checkbox-container-contact h5 reset-marpad validate-checkbox">
+                                <input type="checkbox" id="accept" name="accept" class="checkbox-container-contact__checkbox accept__trigger">
+                                <div class="checkbox-container-contact__box fl">
+                                    <i class="checkbox-container-contact__mark fas fa-check"></i>
+                                </div> 
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                            </label>
+                            <div class="block-contact__button block--texcen reset-col">
+                                <button class="button button-operative ft-homenaje"><span class="h4">send details</span><img src="img/right-arrow.svg" alt="Right arrow" class="form-contact__arrow"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- : Block Contact end : -->
+
+        <!-- : Footer start : -->
+        <footer class="footer">
+            <div class="container">
+                <div class="offset-1">
+                    <p class="reset-marpad">ⓒCopyrights 2018 IG</p>
+                    <p class="reset-marpad">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- : Footer end : -->
+
+    <!-- : MapBox Script : -->
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+    <!-- : Swiper Script : -->
+    <script src="lib/Swiper/js/swiper.min.js"></script>
+    <!-- : Main Script : -->
+    <script src="js/webpacked/main.js"></script>
+</html> 

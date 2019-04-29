@@ -1,0 +1,27 @@
+.checkbox-container-contact{
+    display: inline-block;
+    margin-top: 36px;
+    user-select: none;
+    cursor: pointer;
+    &__checkbox{
+        display: none;
+    }
+    &__box{
+        position: relative;
+        width: 22px; 
+        height: 22px;
+        margin-right: 16px;
+        background: $mainv1;
+        border: 1px solid #d5d5d5; 
+    }
+    &__mark{
+        margin-left: 3px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .3s ease-in-out, visibility .3s ease-in-out;
+    }
+    &__checkbox:checked + &__box &__mark{
+        visibility: visible;
+        opacity: 1;
+    }
+}

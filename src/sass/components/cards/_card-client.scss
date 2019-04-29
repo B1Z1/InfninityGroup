@@ -1,0 +1,34 @@
+.card-client{
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s all;
+    &__image, &__describe, &__contact, &__tags{
+        transition: transform .8s ease-in-out;
+    }
+    &__image{
+        transform: translateY(10px);
+    }
+    &__describe{
+        margin-bottom: 24px;
+        color: $mainv2;
+        transform: translateY(15px);
+    }
+    &__contact{
+        margin-bottom: 40px;
+        transform: translateY(18px);
+    }
+    &__tags{
+        transform: translateY(20px);
+    }
+}
+
+.swiper-slide-active{
+    .card-client{
+        visibility: visible;
+        opacity: 1;
+        &__image, &__describe, &__contact, &__tags{
+            transform: translateY(0);
+        }
+    }
+}

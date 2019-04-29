@@ -1,0 +1,106 @@
+@import "./globalvars";
+
+/* : Reset all styles : */
+@import "./reset";
+
+/* : Fonts : */
+@import "./fonts/font-mada";
+@import "./fonts/font-homenaje";
+
+/* : Base styles : */
+@import "./base";
+
+/* : Grid system : */
+@import "./grid/columns";
+@import "./grid/offsets";
+@import "./grid/extentions";
+
+/* : Components : */
+//Block
+@import "./components/block/block";
+@import "./components/block/block-hero";
+@import "./components/block/block-contact";
+
+//Containers
+@import "./components/container/container";
+
+//Buttons
+@import "./components/buttons/button";
+@import "./components/buttons/button-operative";
+
+//Link
+@import "./components/links/link";
+@import "./components/links/link-arrow";
+
+//Tags
+@import "./components/tags/tag";
+
+//Lists
+@import "./components/lists/list-header";
+@import "./components/lists/list-hmobile";
+@import "./components/lists/list-tags";
+
+//Form
+@import "./components/forms/form-contact";
+
+//Input
+@import "./components/inputs/input"; 
+@import "./components/inputs/input-contact";
+
+//Checkbox-container
+@import "./components/checkbox-container/checkbox-container-contact";
+
+//Filters
+@import "./components/filters/filter";
+@import "./components/filters/filter-repeatgrad";
+@import "./components/filters/filter-linegrad";
+@import "./components/filters/filter-color";
+
+//Cookies
+@import "./components/cookies/cookies";
+
+//Header
+@import "./components/header/header";
+
+//Footer
+@import "./components/footer/footer";
+
+//Burger
+@import "./components/burger/burger";
+
+//Navigation
+@import "./components/navigation/navigation-aside";
+@import "./components/navigation/navigation-hmobile";
+
+//Cards
+@import "./components/cards/card-product";
+@import "./components/cards/card-client";
+
+//Image
+@import "./components/images/image";
+@import "./components/images/image-cookie";
+@import "./components/images/image-product";
+@import "./components/images/image-arrow";
+
+//Quote
+@import "./components/quote/quote";
+
+//Pagination
+@import "./components/pagination/pagination-clients";
+
+//Triggers
+@import "./components/triggers/trigger-fade";
+@import "./components/triggers/trigger-unfade";
+@import "./components/triggers/trigger-fadeup";
+@import "./components/triggers/trigger-burger";
+@import "./components/triggers/trigger-overflow";
+
+//Validate
+@import "./components/validate/validate-alert";
+
+//Font type
+@import "./components/font-type/ft-homenaje";
+@import "./components/font-type/ft-mada";
+
+/* : My reset pack : */
+@import "./myreset";

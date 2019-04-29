@@ -1,0 +1,58 @@
+// @each $name in $columns {
+//     @if $name == 'mbl'{
+//         /* : Column for Mobile : */
+//         @for $i from 1 through 12{ 
+//             .offset-#{$name}-#{$i}{
+//                 @include offset_generator($i);
+//             }
+//         }
+//     }
+//     @else if $name == 'tbl'{
+//         @media only screen and ( min-width: 768px ){
+//             /* : Column for Tablet : */
+//             @for $i from 1 through 12{
+//                 .offset-#{$name}-#{$i}{
+//                     @include offset_generator($i);
+//                 }
+//             }
+//         }
+//     }
+//     @else if $name == 'lpt'{
+//         @media only screen and ( min-width: 1366px ){
+//             /* : Column for Laptop : */
+//             @for $i from 1 through 12{
+//                 .offset-#{$name}-#{$i}{
+//                     @include offset_generator($i);
+//                 }
+//             }
+//         }
+//     }
+//     @else {
+//         @media only screen and ( min-width: 1600px ){
+//             /* : Column for Desktop : */
+//             @for $i from 1 through 12{
+//                 .offset-#{$i}{
+//                     @include offset_generator($i);
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//No more columns are used in template, but if you need more, remove comments and this code
+@media only screen and ( min-width: 1600px ){
+    /* : Column for Desktop : */
+    @for $i from 1 through 12{
+        .offset-#{$i}{
+            @include offset_generator($i);
+        }
+    }
+}
+@media only screen and ( min-width: 1366px ){
+    /* : Column for Laptop : */
+    @for $i from 1 through 12{
+        .offset-lpt-#{$i}{
+            @include offset_generator($i);
+        }
+    }
+}

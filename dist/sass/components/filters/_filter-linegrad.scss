@@ -1,0 +1,7 @@
+.filter-linegrad{
+    opacity: .8;
+    &--operative{
+        background: linear-gradient(135deg, rgba(0,0,0,1) 5%, rgba(98,192,23,1) 40%, rgba(98,192,23,1) 50%, rgba(255,174,19,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffae13', GradientType=1 );
+    }
+}

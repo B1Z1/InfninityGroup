@@ -1,0 +1,34 @@
+.cookies{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: rgba(0,0,0,.8);
+    color: $mainv1;
+    z-index: 100; 
+    &__image{
+        text-align: center;
+    }
+    &__accept{
+        text-align: right;
+    }
+    &__times{
+        display: inline-block;
+        margin-left: 11px;
+        transform: translateY(1px);        
+    }
+}
+
+
+@media only screen and ( max-width: $size_tbl ){
+    .cookies{
+        &__describe{
+            margin-top: 16px;
+        }
+        &__accept{
+            margin-top: 16px;
+        }
+    }
+}

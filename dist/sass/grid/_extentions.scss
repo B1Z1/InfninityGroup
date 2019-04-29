@@ -1,0 +1,48 @@
+/* : Display flex : */
+.d-flex{
+    display: flex;
+}
+
+.fwrap{
+    flex-wrap: wrap;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$gap;
+    margin-left: -$gap;
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.aic{
+    align-items: center;
+}
+
+.ase{
+    align-self: flex-end;
+}
+
+.fdc{
+    flex-direction: column;
+}
+
+/* : Floats : */
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.fl{
+    float: left;
+}
+
+/* : Margin manipulation : */
+.ma{
+    margin-right: auto;
+    margin-left: auto;
+}

@@ -1,0 +1,12 @@
+.list-hmobile{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    &__element{
+        margin-top: 16px;
+        &:first-child{
+            margin-top: 0
+        }
+    }
+}   

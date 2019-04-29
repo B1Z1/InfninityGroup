@@ -1,0 +1,13 @@
+.link{
+    color: inherit;
+    text-decoration: inherit;
+    &--operative{
+        color: $operative;
+    }
+    &--white{
+        color: $mainv1;
+    }
+    &--underline{
+        text-decoration: underline;
+    }
+}

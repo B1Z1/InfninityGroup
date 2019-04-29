@@ -1,0 +1,11 @@
+.button{
+    background: inherit;
+    color: inherit;
+    border: inherit;
+    outline: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    &--uppercase{
+        text-transform: uppercase;
+    }
+}

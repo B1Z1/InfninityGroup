@@ -1,0 +1,22 @@
+.block{
+    position: relative;
+    margin-bottom: 85px;
+    width: 100%;
+    &--backimage{ 
+        background-size: cover;
+        background-position: center;
+    }
+    &--larger{
+        padding-top: 128px;
+        padding-bottom: 128px;
+    }
+    &--cmain1{
+        color: $mainv1;
+    }
+    &--texcen{
+        text-align: center;
+    }
+    &__content{
+        margin-top: 46px;
+    }
+}

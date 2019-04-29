@@ -1,0 +1,11 @@
+.trigger-burger{
+    &--active{
+        .trigger-burger__line{
+            transform: rotate(60deg);
+            background: $mainv1;
+        }
+    }
+    &__line{
+        transition: transform .3s ease-in-out, background .3s ease-in-out;
+    }
+}

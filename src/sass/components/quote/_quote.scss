@@ -1,0 +1,21 @@
+.quote{
+    position: relative;
+    &::before{
+        content: '„';
+        position: absolute;
+        top: -25px;
+        left: -50px;
+        font-size: 61px;
+        font-family: 'Mada-Bold', sans-serif;
+    }
+}
+
+@media only screen and ( max-width: $size_tbl ){
+    .quote{
+        &::before{
+            top: -50px;
+            left: -25px;
+            font-size: 50px;
+        }
+    }
+}

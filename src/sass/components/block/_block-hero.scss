@@ -1,0 +1,26 @@
+.block-hero{
+    padding-top: 170px;
+    padding-bottom: 300px;
+    color: $mainv1;
+    &--darker{
+        color: $mainv2;
+    }
+    &__title{
+        text-transform: uppercase;
+        text-align: center;
+    }
+} 
+
+@media only screen and ( max-width: $size_tbl ){
+    .block-hero{
+        padding-top: 128px;
+        padding-bottom: 256px;
+    }
+}
+
+@media only screen and ( max-width: $size_mbl ){
+    .block-hero{
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+}

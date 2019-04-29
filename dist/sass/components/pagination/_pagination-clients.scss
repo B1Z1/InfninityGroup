@@ -1,0 +1,20 @@
+.pagination-clients{
+    position: relative;
+    bottom: 22px!important;
+    z-index: 99;
+    .swiper-pagination-bullet{
+        width: 15px;
+        height: 15px;
+        background: $mainv1;
+        opacity: .5;
+        &-active{
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and ( max-width: $size_lpt ){
+    .pagination-clients{
+        bottom: -20px!important;
+    }
+}

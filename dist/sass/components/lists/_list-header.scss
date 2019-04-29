@@ -1,0 +1,16 @@
+.list-header{
+    position: relative;
+    text-transform: uppercase;
+    &__element{
+        margin-right: 6%;
+        padding-right: 6%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-right: 1px solid $mainv1;
+        &:last-child{
+            margin-right: 0;
+            padding-right: 0;
+            border-right: none;
+        }
+    }
+}
