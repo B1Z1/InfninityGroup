@@ -13,8 +13,7 @@
     @if ( $name == 'mbl' ){
         @for $i from 1 to 13{
             .col-#{$name}-#{$i}{
-                flex: 0 0 $i / 12 * 100%;
-                width: $i / 12 * 100%;
+                @include column_generator($i);
             }
         }
     }
@@ -22,8 +21,7 @@
         @media only screen and ( min-width: $size ){
             @for $i from 1 to 13{
                 .col-#{$name}-#{$i}{
-                    flex: 0 0 $i / 12 * 100%;
-                    width: $i / 12 * 100%;
+                    @include column_generator($i);
                 }
             }
         }

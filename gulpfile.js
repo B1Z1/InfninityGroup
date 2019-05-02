@@ -5,6 +5,7 @@ var gulp                = require('gulp'),
     clean               = require('gulp-clean-css'),
     rename              = require('gulp-rename'),
     cmq                 = require('gulp-group-css-media-queries'),
+    webpack             = require('webpack'),
     webpackStream       = require('webpack-stream');
 
 function browserSync(done){
@@ -46,7 +47,19 @@ function scripts(){
                 mode: 'production',
                 output: {
                     filename: 'main.js',
-                }
+                },
+                module: {
+                    rules: [
+                      {
+                        test: /\.(js)$/,
+                        exclude: /(node_modules)/,
+                        loader: 'babel-loader',
+                        query: {
+                          presets: ['@babel/preset-env']
+                        }
+                      }
+                    ]
+                  },
             }))
             .pipe(gulp.dest('./src/js/webpacked'))
 }

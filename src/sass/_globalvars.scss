@@ -1,3 +1,4 @@
+/* : Gutter : */
 $gutter: 15px;
 
 /* : Query sizes : */
@@ -17,15 +18,11 @@ $footer: #242424;
 
 
 //Mixin margin generator for 12 column
+@mixin column_generator($i){
+    flex: 0 0 $i / 12 * 100%;
+    max-width: $i / 12 * 100%;
+} 
+//Mixin margin generator for 12 column
 @mixin offset_generator($i){
     margin-left: $i / 12 * 100%;
 } 
-
-//Map list
-@mixin map-size($type, $el){
-    @each $name, $size in $sizes{
-        @if ( $name == $el ){
-            $type: $size;
-        }
-    }
-}

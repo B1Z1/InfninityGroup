@@ -18,6 +18,7 @@ export default class {
     }
     //On click accepted class to cookie and save cookie
     init(){
+        console.log('work');
         this.button.addEventListener('click', (ev)=>{
             this.anime.animate([
                 {
